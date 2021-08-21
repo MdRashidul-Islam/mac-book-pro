@@ -10,16 +10,16 @@ function price(name, price){
 
 //sum total price 
 function updateTotal(name){
-              const memoryTotalInput = document.getElementById('memory-total').innerText;
-              const ssdTotalInput = document.getElementById('ssd-total').innerText;
-              const deliTotalInput = document.getElementById('deli-total').innerText;
+              const memoryInput = document.getElementById('memory-total').innerText;
+              const ssdInput = document.getElementById('ssd-total').innerText;
+              const deliInput = document.getElementById('deli-total').innerText;
               
-              const ssdPrice = parseInt(ssdTotalInput);
-              const memoryPrice = parseInt(memoryTotalInput);
-              const deliPrice = parseInt(deliTotalInput);
+              const ssdPrice = parseInt(ssdInput);
+              const memoryPrice = parseInt(memoryInput);
+              const deliCost = parseInt(deliInput);
       
-    const total = ssdPrice + memoryPrice +deliPrice+1299
-    console.log(total);    
+    const total = ssdPrice + memoryPrice +deliCost+1299
+      
     document.getElementById('total-price').innerText = total
     document.getElementById('total').innerText = total
 }
