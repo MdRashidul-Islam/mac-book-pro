@@ -13,12 +13,14 @@ function updateTotal(name){
               const memoryInput = document.getElementById('memory-total').innerText;
               const ssdInput = document.getElementById('ssd-total').innerText;
               const deliInput = document.getElementById('deli-total').innerText;
-              
+              const bestPriceInput = document.getElementById('best-price').innerText
+
+              const bestPrice = parseInt(bestPriceInput)
               const ssdPrice = parseInt(ssdInput);
               const memoryPrice = parseInt(memoryInput);
               const deliCost = parseInt(deliInput);
       
-    const total = ssdPrice + memoryPrice +deliCost+1299
+    const total = ssdPrice + memoryPrice +deliCost+bestPrice
       
     document.getElementById('total-price').innerText = total
     document.getElementById('total').innerText = total
